@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./tailwindcss/tailwind.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body style="max-width: 1200px" class="mx-auto">
+
+    <!-- Navbar -->
+    <div class="bg-gray-800 p-3">
+        <ul class="flex justify-center items-center">
+            <div class="flex flex-grow items-center">
+                <a href="./Dashboard.html" class="text-white text-5xl font-bold"><li class="mr-6 ml-3 flex-center">izeBot</li></a>
+                <a href="./docs.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Docs</Button></li></a>
+                <a href="./dashboard.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Dashboard</Button></li></a>
+            </div>
+            <div class="flex flex-grow justify-end items-center">
+                <a href="./login.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Sign out</Button></li></a>
+                <a href="./profile.html"><li><img src="./src/profile.jpg" class="w-14 rounded-full"></li></a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="grid grid-cols-5 bg-gray-400">
+        <!-- Profile Image & Name -->
+        <div class="col-span-2 flex flex-col justify-start items-center p-5">
+            <button class="btn bg-gray-200 -mb-3 py-1 z-10"><i class="fas fa-edit mr-2"></i><span>Edit</span></button>
+            <img src="./src/profile.jpg" class="rounded-lg mb-5" style="width: 300px">
+            <span class="text-center">
+                <span class="text-5xl">Display Name</span>
+                <button><i class="fas fa-pen ml-2 text-2xl"></i></button>
+            </span>
+        </div>
+
+        <!-- Profile Form -->
+        <div class="col-span-3 bg-gray-400 flex justify-center items-center p-10">
+            <form class="w-full bg-indigo-900 text-white border-4 border-indigo-400 ring-4 ring-indigo-400 rounded-lg p-10 flex flex-col justify-center items-center">
+                <div class="w-full mb-5 flex flex-col">
+                    <label for="fname" class="mb-2">Firstname</label>
+                    <input type="text" name="fname" id="fname" class="p-3 text-black rounded-md">
+                </div>
+                <div class="w-full mb-5 flex flex-col">
+                    <label for="lname" class="mb-2">Lastname</label>
+                    <input type="text" name="lname" id="lname" class="p-3 text-black rounded-md">
+                </div>
+                <div class="w-full mb-5 flex flex-col">
+                    <label for="email" class="mb-2">Email</label>
+                    <input type="email" name="email" id="email" class="p-3 text-black rounded-md">
+                </div>
+                <div class="w-full mb-5 flex flex-col">
+                    <label for="phone" class="mb-2">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" class="p-3 text-black rounded-md">
+                </div>
+                <div class="w-full mb-5 flex flex-col">
+                    <label for="address" class="mb-2">Address</label>
+                    <input type="text" name="address" id="address" class="p-3 text-black rounded-md">
+                </div>
+                <div class="w-full mb-5 flex flex-col">
+                    <label for="country" class="mb-2">Country</label>
+                    <input type="text" name="country" id="country" class="p-3 text-black rounded-md">
+                </div>
+                <div class="w-full mb-8 flex flex-col">
+                    <label for="postal" class="mb-2">Postal Code</label>
+                    <input type="text" name="postal" id="postal" class="p-3 text-black rounded-md">
+                </div>
+                <div class="w-full flex">
+                    <button type="submit" class="flex-grow btn bg-purple-400 mr-5">Save</button>
+                    <button type="reset" class="flex-grow btn bg-gray-400">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="bg-gray-500 text-white text-3xl text-center font-bold p-5">
+        <p>&copy;izeBot 2021</p>
+    </div>
+</body>
+</html>

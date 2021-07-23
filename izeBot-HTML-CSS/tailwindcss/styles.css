@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply rounded px-5 py-3 font-semibold; 
+    }
+    .min-w-350 {
+        min-width: 350px;
+    }
+}
