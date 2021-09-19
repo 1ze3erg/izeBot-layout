@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="./tailwindcss/tailwind.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body style="max-width: 1200px" class="mx-auto">
-
+<body class="body">
     <!-- Navbar -->
-    <div class="bg-gray-800 p-3">
-        <ul class="flex justify-center items-center">
-            <div class="flex flex-grow items-center">
-                <a href="./Dashboard.html" class="text-white text-5xl font-bold"><li class="mr-6 ml-3 flex-center">izeBot</li></a>
-                <a href="./docs.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Docs</Button></li></a>
-                <a href="./dashboard.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Dashboard</Button></li></a>
+    <div class="bg-gray-800 p-3 md:p-0">
+        <ul class="flex justify-center items-center md:flex-col md:items-stretch">
+            <div class="flex flex-grow items-center md:flex-col md:items-stretch">
+                <a href="./Dashboard.html" class="text-white text-5xl font-bold"><li class="mr-6 ml-3 flex-center md:w-full md:text-center md:mr-0 md:ml-0 md:mb-2">izeBot</li></a>
+                <a href="./profile.html"><li class="hidden md:flex md:justify-center md:mb-1"><img src="./src/profile.jpg" class="w-14 rounded-full md:rounded-none md:w-36"></li></a>
+                <a href="./docs.html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-700 text-white md:w-full md:rounded-none">Docs</Button></li></a>
+                <a href="./dashboard.html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-700 text-white md:w-full md:rounded-none">Dashboard</Button></li></a>
             </div>
-            <div class="flex flex-grow justify-end items-center">
-                <a href="./login.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Sign out</Button></li></a>
-                <a href="./profile.html"><li><img src="./src/profile.jpg" class="w-14 rounded-full"></li></a>
+            <div class="flex flex-grow justify-end items-center md:flex-col md:items-stretch">
+                <a href="./login.html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-700 text-white md:w-full md:rounded-none">Sign out</Button></li></a>
+                <a href="./profile.html"><li class="md:hidden"><img src="./src/profile.jpg" class="w-14 rounded-full"></li></a>
             </div>
         </ul>
     </div>
 
     <!-- Content -->
-    <div class="grid grid-cols-5 bg-gray-400">
+    <div class="grid grid-cols-5 bg-gray-400 lg:grid-cols-none lg:grid-rows-3">
         <!-- Profile Image & Name -->
-        <div class="col-span-2 flex flex-col justify-start items-center p-5">
+        <div class="col-span-2 flex flex-col justify-start items-center p-5 lg:col-span-3 lg:row-span-1">
             <button class="btn bg-gray-200 -mb-3 py-1 z-10"><i class="fas fa-edit mr-2"></i><span>Edit</span></button>
             <img src="./src/profile.jpg" class="rounded-lg mb-5" style="width: 300px">
             <span class="text-center">
@@ -38,7 +38,7 @@
         </div>
 
         <!-- Profile Form -->
-        <div class="col-span-3 bg-gray-400 flex justify-center items-center p-10">
+        <div class="col-span-3 bg-gray-400 flex justify-center items-center p-10 lg:row-span-2 lg:col-span-3 md:p-0">
             <form class="w-full bg-indigo-900 text-white border-4 border-indigo-400 ring-4 ring-indigo-400 rounded-lg p-10 flex flex-col justify-center items-center">
                 <div class="w-full mb-5 flex flex-col">
                     <label for="fname" class="mb-2">Firstname</label>

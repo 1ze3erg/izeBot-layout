@@ -8,27 +8,26 @@
     <link rel="stylesheet" href="./tailwindcss/tailwind.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body style="max-width: 1200px" class="mx-auto">
-
+<body class="body">
     <!-- Navbar (Not Login) -->
-    <div class="bg-gray-800 p-3">
-        <ul class="flex justify-center items-center">
-            <div class="flex flex-grow items-center">
-                <a href="./index.html" class="text-white text-5xl font-bold"><li class="mr-6 ml-3 flex-center">izeBot</li></a>
-                <a href="./index.html" class="text-white text-xl"><li class="mr-5 p-2.5 rounded flex-center hover:bg-gray-700">Home</li></a>
-                <a href="./docs(not-login).html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Docs</Button></li></a>
-                <a href="./preview-bot-test(not-Login).html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Try izeBot</Button></li></a>
+    <div class="bg-gray-800 p-3 md:p-0">
+        <ul class="flex justify-center items-center md:flex-col md:items-stretch">
+            <div class="flex flex-grow items-center md:flex-col md:items-stretch">
+                <a href="./index.html" class="text-white text-5xl font-bold"><li class="mr-6 ml-3 flex-center md:w-full md:text-center md:mr-0 md:ml-0 md:mb-2">izeBot</li></a>
+                <a href="./index.html" class="text-white text-xl"><li class="mr-5 p-2.5 rounded flex-center hover:bg-gray-700 md:w-full md:text-center md:mr-0 md:border-b-2 md:rounded-none">Home</li></a>
+                <a href="./docs(not-login).html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-700 text-white md:w-full md:rounded-none">Docs</Button></li></a>
+                <a href="./preview-bot-test(not-Login).html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-700 text-white md:w-full md:rounded-none">Try izeBot</Button></li></a>
             </div>
-            <div class="flex flex-grow justify-end items-center">
-                <a href="./register.html"><li class="mr-5"><Button class="btn bg-indigo-400 text-white">Register</Button></li></a>
-                <a href="./login.html"><li class=""><Button class="btn bg-indigo-700 text-white">Sign in</Button></li></a>
+            <div class="flex flex-grow justify-end items-center md:flex-col md:items-stretch">
+                <a href="./register.html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-400 text-white md:w-full md:rounded-none">Register</Button></li></a>
+                <a href="./login.html"><li class="md:border-b-2"><Button class="btn bg-indigo-700 text-white md:w-full md:rounded-none">Sign in</Button></li></a>
             </div>
         </ul>
     </div>
 
     <!-- Register Form -->
-    <div class="bg-gray-400 flex justify-center items-center py-10">
-        <div class="w-1/2 bg-indigo-900 text-white border-4 border-indigo-400 ring-4 ring-indigo-400 rounded-lg p-10 flex flex-col justify-center items-center">
+    <div class="bg-gray-400 flex justify-center items-center py-10 sm:px-5">
+        <div class="w-500 md:max-w-md sm:max-w-full bg-indigo-900 text-white border-4 border-indigo-400 ring-4 ring-indigo-400 rounded-lg p-10 flex flex-shrink-0 flex-col justify-center items-center">
             <h1 class="w-full text-center text-3xl font-semibold mb-5">Register</h1>
             <form class="w-full mb-7 flex flex-col items-center">
                 <div class="w-full mb-5 flex flex-col">
@@ -63,6 +62,5 @@
     <div class="bg-gray-500 text-white text-3xl text-center font-bold p-5">
         <p>&copy;izeBot 2021</p>
     </div>
-
 </body>
 </html>

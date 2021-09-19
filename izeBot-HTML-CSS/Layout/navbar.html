@@ -7,17 +7,18 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="../tailwindcss/tailwind.css">
 </head>
-<body>
+<body style="max-width: 1200px" class="mx-auto">
     <!-- Navbar -->
-    <div class="bg-gray-800 p-3">
-        <ul class="flex justify-center items-center">
-            <div class="flex flex-grow items-center">
-                <a href="./Dashboard.html" class="text-white text-5xl font-bold"><li class="mr-6 ml-3 flex-center">izeBot</li></a>
-                <a href="./docs.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Docs</Button></li></a>
+    <div class="bg-gray-800 p-3 md:p-0">
+        <ul class="flex justify-center items-center md:flex-col md:items-stretch">
+            <div class="flex flex-grow items-center md:flex-col md:items-stretch">
+                <a href="./Dashboard.html" class="text-white text-5xl font-bold"><li class="mr-6 ml-3 flex-center md:w-full md:text-center md:mr-0 md:ml-0 md:mb-2">izeBot</li></a>
+                <a href="./profile.html"><li class="hidden md:flex md:justify-center md:mb-1"><img src="../src/profile.jpg" class="w-14 rounded-full md:rounded-none md:w-36"></li></a>
+                <a href="./docs.html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-700 text-white  md:w-full md:rounded-none">Docs</Button></li></a>
             </div>
-            <div class="flex flex-grow justify-end items-center">
-                <a href="./login.html"><li class="mr-5"><Button class="btn bg-indigo-700 text-white">Sign out</Button></li></a>
-                <a href="./profile.html"><li><img src="../src/profile.jpg" class="w-14 rounded-full"></li></a>
+            <div class="flex flex-grow justify-end items-center md:flex-col md:items-stretch">
+                <a href="./login.html"><li class="mr-5 md:mr-0 md:border-b-2"><Button class="btn bg-indigo-700 text-white md:w-full md:rounded-none">Sign out</Button></li></a>
+                <a href="./profile.html"><li class="md:hidden"><img src="../src/profile.jpg" class="w-14 rounded-full"></li></a>
             </div>
         </ul>
     </div>
